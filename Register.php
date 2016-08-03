@@ -13,7 +13,7 @@ if(isset($_POST['reg']))
     $status= $mysqli->query($sql);
     if(! $status)
     {
-        die("Could not create table: " . mysqli_connect_error();
+        die("Could not create table: " . mysqli_connect_error());
     }
     else
     {
@@ -33,18 +33,27 @@ if(isset($_POST['reg']))
         }
         else
         {
-        $sql1="INSERT INTO Users (username, name, email, password) VALUES ('$username', '$name', '$email', '$password')";
-        
-        $f= $mysqli->query($sql1);
-        if(! $f)
-        {
-            die("Data was not entered: " . mysqli_connect_error();
-        }
-        else
-        {
-            header('Location:LogIN.php');
-        }
-        }
+            if((!filter_var($email, FILTER_VALIDATE_EMAIL))||(!preg_match("/^[a-zA-Z ]*$/",$username)))
+            {
+                echo '<script language="javascript">';
+                echo 'alert("enter valid name or email address")';
+                echo '</script>';
+            }
+            else
+            {
+               $sql1="INSERT INTO Users (username, name, email, password) VALUES ('$username', '$name', '$email', '$password')";
+                $f= $mysqli->query($sql1);
+                if(! $f)
+                {
+                    die("Data was not entered: " . mysqli_connect_error());
+                        }
+                        else
+                        {
+                            header('Location:LogIN.php');
+                        }
+                    }   
+            }
+      
     }
 
 
