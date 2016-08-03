@@ -1,0 +1,154 @@
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: -8px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+   
+}
+table {
+color: #333; /* Lighten up font color */
+font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+width: 100%;
+border-collapse:
+collapse; border-spacing: 0;
+}
+
+td, th { border: 1px solid #CCC; height: 30px; } /* Make cells a bit taller */
+
+th {
+background: #F3F3F3; /* Light grey background */
+font-weight: bold; /* Make sure they're bold */
+}
+
+td {
+background: #FAFAFA; /* Lighter grey background */
+text-align: center; /* Center our text */
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+input#searchButton
+{
+    float: right;
+    margin: 11;
+    
+}
+input#searchBox
+{
+    float: right;
+    margin: 13;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+form
+{
+    margin: 137px;
+}
+
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+nav {
+    width: 100%;
+  margin-top: 0px;
+  padding: 24px;
+  text-align: center;
+  font-family: Raleway;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+#nav1 {
+  background: #3fa46a;
+}
+
+
+.link1 {
+  transition: 0.3s ease;
+  background: #3fa46a;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  border-top: 4px solid #3fa46a;
+  border-bottom: 4px solid #3fa46a;
+  padding: 20px 0;
+  margin: 0 20px;
+}
+
+.link1:hover {
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  padding: 6px 0; 
+}
+
+
+form#pos {
+    margin-top: 2px;
+    padding: 22px;
+}
+
+form#ddd {
+    margin: 106px;
+    padding: 32;
+    margin-top: 32px;
+}
+

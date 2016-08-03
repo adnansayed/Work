@@ -1,0 +1,129 @@
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #00e673;
+    background-color: #00cc66;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #4dffa6;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #008040;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #00e673;
+    border-top: none;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button#search
+{
+float: right;
+padding: 6px;
+width: 115px;
+margin: 0px;
+margin-top: -5px;
+    height: 35;
+}
+
+form#pos {
+   margin-top: -143px;
+padding: 172px;
+}
+
+input#abc
+{
+    float: right;
+height: 35px;
+width: 14%;
+margin: 1px;
+ -webkit-border-radius: 5px;
+border-radius: 5px;
+margin-top: -6px;
+}
+
+a#re
+{
+float: right;
+padding: 0%;
+margin: 0px;
+padding-right: 119px;
+}
+
+a#ft
+{
+    
+}
+textarea
+{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+table {
+color: #333; /* Lighten up font color */
+font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+width: 100%;
+border-collapse:
+collapse; border-spacing: 0;
+    margin-top: 6px;
+}
+
+td, th { border: 1px solid #CCC; height: 30px; } /* Make cells a bit taller */
+
+th {
+background: #F3F3F3; /* Light grey background */
+font-weight: bold; /* Make sure they're bold */
+}
+
+td {
+background: #FAFAFA; /* Lighter grey background */
+text-align: center; /* Center our text */
+}
+
+.form-field{
+  white-space: nowrap;
+}
