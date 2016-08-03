@@ -151,7 +151,7 @@ if(isset($_POST['conc']))
     $status=$mysqli->query($sql);
     if(! $status)
     {
-        die("Could not create table: " . mysqli_connect_error()));
+        die("Could not create table: " . mysqli_connect_error());
     }
     else
     {
