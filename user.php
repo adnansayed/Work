@@ -161,7 +161,9 @@ if(isset($_POST['conc']))
         $message = mysqli_real_escape_string($mysqli, $_POST['comment']);
         
         if ((!filter_var($email, FILTER_VALIDATE_EMAIL))||(!preg_match("/^[a-zA-Z ]*$/",$username))) {
-            echo "enter valid email address or name";
+            echo '<script language="javascript">';
+            echo 'alert("check email or name")';
+            echo '</script>';
         }
         
         else
