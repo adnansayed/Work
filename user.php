@@ -151,7 +151,7 @@ if(isset($_POST['conc']))
     $status=$mysqli->query($sql);
     if(! $status)
     {
-        die("Could not create table: " . $mysqli->connect_error());
+        die("Could not create table: " . mysqli_connect_error()));
     }
     else
     {
@@ -165,7 +165,7 @@ if(isset($_POST['conc']))
         $f=$mysqli->query($sql1);
         if(! $f)
         {
-            die("Data was not entered: " . $mysqli->connect_error());
+            die("Data was not entered: " . mysqli_connect_error());
         }
         else
         {

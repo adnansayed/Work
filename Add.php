@@ -1,20 +1,9 @@
 <?php
-
-   $servername = "localhost";
-   $username = "root";
-
-// Create connection
-   $conn = mysqli_connect($servername, $username);
+  include('connectdb.php');
 
 if(isset($_POST['add']))
 {   
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-else
-{
-    mysqli_select_db($conn,"task");
+  
     
      $sql = "CREATE TABLE IF NOT EXISTS Pages (
      id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -22,19 +11,20 @@ else
      authname VARCHAR(100) NOT NULL,
      content VARCHAR(50000) NOT NULL
      )";
-    $status=mysqli_query($conn,$sql);
+    $status=$mysqli->query($sql);
+    
     if(! $status)
     {
         die("Could not create table: " . mysqli_connect_error());
     }
     else
     {
-        $title = mysqli_real_escape_string($conn, $_POST['pg']);
-        $name = mysqli_real_escape_string($conn, $_POST['nm']);
-        $content = mysqli_real_escape_string($conn, $_POST['editor1']);
+        $title = mysqli_real_escape_string($mysqli, $_POST['pg']);
+        $name = mysqli_real_escape_string($mysqli, $_POST['nm']);
+        $content = mysqli_real_escape_string($mysqli, $_POST['editor1']);
         
         $sql1="INSERT INTO Pages (title, authname, content) VALUES ('$title', '$name', '$content')";
-        $f=mysqli_query($conn,$sql1);
+        $f=$mysqli->query($sql1);
         if(! $f)
         {
             die("Data was not entered: " . mysqli_connect_error());
@@ -45,7 +35,7 @@ else
         }
         
     }
-}
+
 }
 ?>
 

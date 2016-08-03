@@ -17,7 +17,9 @@ if(isset($_POST['sigin']))
     }
     else
     {
-        die("Check username and password: " . $mysqli->connect_error());
+        echo '<script language="javascript">';
+            echo 'alert("check username or password")';
+            echo '</script>';
     }
 
 }
