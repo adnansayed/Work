@@ -160,6 +160,13 @@ if(isset($_POST['conc']))
         $email = mysqli_real_escape_string($mysqli, $_POST['em']);
         $message = mysqli_real_escape_string($mysqli, $_POST['comment']);
         
+        if ((!filter_var($email, FILTER_VALIDATE_EMAIL))||(!preg_match("/^[a-zA-Z ]*$/",$username))) {
+            echo "enter valid email address or name";
+        }
+        
+        else
+        {
+        
         $sql1="INSERT INTO Contact (name, subject, email, message) VALUES ('$username', '$subject', '$email', '$message')";
         
         $f=$mysqli->query($sql1);
@@ -170,6 +177,7 @@ if(isset($_POST['conc']))
         else
         {
             header('Location:user.php');
+        }
         }
     }
 
