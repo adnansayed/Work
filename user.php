@@ -24,6 +24,7 @@ if ( isset( $_GET['s'] ) ) {
    <link rel="stylesheet" type="text/css" href="css/Style2.css">
          <script src="js/my.js"></script>
      <script src="js/vali.js"></script>
+    <title>Content Management System</title>
     </head>
     <body>
         <ul class="tab">
@@ -130,7 +131,7 @@ $mysqli->close();
         
 
          <footer>
-  <a id="ft" href="index.php">Admin</a>
+  <a id="ft" href="index.php">Login as Admin</a>
 </footer> 
         
     </body>

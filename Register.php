@@ -64,10 +64,11 @@ if(isset($_POST['reg']))
     <head>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script src="js/vali.js"></script>
+        <title>Content Management System</title>
     </head>
     <body>
         
-        <nav id="nav1">
+<nav id="nav1">
   <a class="link1" href="admin1.php">Home</a>
   <a class="link1" href="Add.php">Add</a>
   <a class="link1" href="Register.php">Register</a>

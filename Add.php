@@ -44,6 +44,7 @@ if(isset($_POST['add']))
      <head>
          <link rel="stylesheet" type="text/css" href="css/style.css">
          <script src="ckeditor/ckeditor.js"></script>
+         <title>Content Management System</title>
         </head>
           <body>
      <nav id="nav1">

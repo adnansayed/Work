@@ -10,6 +10,7 @@ function renderForm($first = '', $last ='', $content=' ', $error = '', $id = '')
 <head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="ckeditor/ckeditor.js"></script>
+    <title>Content Management System</title>
 <title>
 <?php if ($id != '') { echo "Edit Record"; } else { echo "New Record"; } ?>
 </title>

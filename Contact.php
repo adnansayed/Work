@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Content Management System</title>
     </head>
     <body>
      <nav id="nav1">

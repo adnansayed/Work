@@ -13,6 +13,11 @@
     
 </ul>
 
+    
+<footer>
+  <a id="ft" href="index.php">Login as Admin</a>
+</footer> 
+        
 </body>
 </html>
 
